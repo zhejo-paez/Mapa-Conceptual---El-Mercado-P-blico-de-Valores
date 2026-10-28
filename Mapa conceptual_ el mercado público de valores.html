@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa conceptual: el mercado público de valores</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fa;--ink:#0f2233;--mute:#55697c;--ln:#8a9bab;--x:#b5306a;
+--k0b:#ece9fa;--k0:#4a3fa8;--k1b:#e3f4ef;--k1:#0e7c66;--k2b:#e6edf8;--k2:#2b4f8a;--k3b:#fbf1d9;--k3:#9a6a0b;--k4b:#fbe9e2;--k4:#b5481f;--k5b:#e8f2dc;--k5:#3d7a14;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a26;--ink:#e8eff5;--mute:#9fb2c4;--ln:#6f869b;--x:#f08ab4;
+--k0b:#2a2552;--k0:#b3acf0;--k1b:#123a38;--k1:#4fd1b0;--k2b:#1b3157;--k2:#8db3f0;--k3b:#3a2f12;--k3:#e8b84a;--k4b:#40231a;--k4:#f0987a;--k5b:#1f3a14;--k5:#9ad46a}}
+:root[data-theme="dark"]{--bg:#0d1a26;--ink:#e8eff5;--mute:#9fb2c4;--ln:#6f869b;--x:#f08ab4;
+--k0b:#2a2552;--k0:#b3acf0;--k1b:#123a38;--k1:#4fd1b0;--k2b:#1b3157;--k2:#8db3f0;--k3b:#3a2f12;--k3:#e8b84a;--k4b:#40231a;--k4:#f0987a;--k5b:#1f3a14;--k5:#9ad46a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+header{padding:32px 20px 8px;max-width:1100px;margin:0 auto}
+h1{font:600 clamp(1.6rem,4vw,2.3rem)/1.2 Newsreader,Georgia,serif;margin:0 0 8px}
+header p{margin:0;color:var(--mute);max-width:70ch}
+.leg{display:flex;flex-wrap:wrap;gap:18px;margin:14px 0 0;font-size:.9rem;color:var(--mute)}
+.leg i{display:inline-block;vertical-align:middle;width:34px;margin-right:6px;border-top:2px solid var(--ln)}
+.leg i.d{border-top:2px dashed var(--x)}
+.map{overflow-x:auto;padding:8px 12px 40px}
+svg{display:block;min-width:1100px;width:100%;height:auto;margin:0 auto;max-width:1500px}
+svg text{font-family:"IBM Plex Sans",system-ui,sans-serif;fill:var(--ink)}
+.ed{stroke:var(--ln);stroke-width:1.5;fill:none}
+.cx{stroke:var(--x);stroke-width:1.8;stroke-dasharray:6 4;fill:none}
+.lb{font-size:11.5px;font-style:italic;fill:var(--mute);paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
+.lx{font-size:11.5px;font-weight:500;fill:var(--x);paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;text-anchor:middle}
+.n rect{stroke-width:1.5}
+.k0 rect{fill:var(--k0b);stroke:var(--k0)}.k1 rect{fill:var(--k1b);stroke:var(--k1)}.k2 rect{fill:var(--k2b);stroke:var(--k2)}.k3 rect{fill:var(--k3b);stroke:var(--k3)}.k4 rect{fill:var(--k4b);stroke:var(--k4)}.k5 rect{fill:var(--k5b);stroke:var(--k5)}
+.h{font:600 17px Newsreader,Georgia,serif}.t{font-size:13.5px;font-weight:500}.s{font-size:12px;fill:var(--mute)}
+</style>
+</head>
+<body>
+<div class="map"><svg id="m" viewBox="0 0 1400 1000" role="img" aria-label="Mapa conceptual del mercado público de valores"></svg></div>
+<script>
+var S=document.getElementById('m'),o='';
+function T(x,y,s,c,a){o+='<text x="'+x+'" y="'+y+'" class="'+c+'" text-anchor="'+(a||'middle')+'">'+s+'</text>'}
+function P(d,c,m){o+='<path d="'+d+'" class="'+c+'"'+(m?' marker-end="url(#a'+m+')"':'')+'/>'}
+function B(x,y,w,h,k,f){o+='<g class="n k'+k+'"><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="9"/>'+f+'</g>'}
+o+='<defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9z" fill="#8a9bab"/></marker><marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9z" fill="#b5306a"/></marker></defs>';
+var C=[
+{t:'Participantes',l:'lo integran',k:1,c:[['Emisores','Empresas y entidades públicas','que ofrecen sus valores'],['Inversionistas','Personas y organizaciones','que aportan su ahorro'],['Intermediarios','Sociedades comisionistas','de bolsa: ejecutan órdenes']]},
+{t:'Instituciones',l:'lo regulan',k:2,c:[['Superfinanciera','Inspecciona y supervisa','y protege al inversionista'],['bvc','Facilita la negociación','de valores mediante la bolsa'],['AMV','Ejerce la autorregulación','y vigila a los intermediarios']]},
+{t:'Instrumentos',l:'se negocian',k:3,c:[['Acciones','Participación en una empresa','Renta variable; dan dividendos'],['Bonos','Representan deuda del emisor','Pagan intereses y capital'],['TES','Deuda pública del Gobierno','Financian al Estado'],['Otros valores','Según su regulación','Ej.: papeles comerciales']]},
+{t:'Mercados',l:'se clasifican en',k:4,c:[['Primario','Valores emitidos por 1.ª vez','El emisor recibe los recursos'],['Secundario','Valores ya en circulación','Da liquidez al inversionista'],['Bursátil','Negociación vía bolsa','Reglas y precios visibles'],['Mostrador (OTC)','Negociación fuera de bolsa','Pactada y registrada']]},
+{t:'Objetivos y beneficios',l:'buscan',k:5,c:[['Financiar','Empresas y proyectos','Alternativa al crédito bancario'],['Canalizar el ahorro','Hacia la inversión','Convierte ahorro en capital'],['Facilitar la negociación','De los valores','Compra y venta ágiles'],['Transparencia','Y protección al inversionista','Información clara y vigilancia']]}];
+B(530,12,340,62,0,'<text x="700" y="39" class="h" text-anchor="middle">Mercado público de valores</text><text x="700" y="60" class="s" text-anchor="middle">Sistema de financiación e inversión</text>');
+P('M700 74L700 108','ed',1);T(712,92,'se define como','lb','start');
+B(400,110,600,64,0,'<text x="700" y="136" class="t" text-anchor="middle">Mecanismo que conecta a quienes necesitan recursos</text><text x="700" y="156" class="t" text-anchor="middle">con quienes desean invertir, mediante la emisión y negociación de valores</text>');
+P('M700 174L700 256','ed');T(712,222,'se estructura en cinco componentes','lb','start');
+P('M140 256L1260 256','ed');
+C.forEach(function(c,i){var x=140+280*i;
+P('M'+x+' 256L'+x+' 288','ed',1);
+B(x-100,290,200,46,c.k,'<text x="'+x+'" y="319" class="h" text-anchor="middle">'+c.t+'</text>');
+var n=c.c.length;P('M'+(x-92)+' 336L'+(x-92)+' '+(417+92*(n-1)),'ed');
+T(x-86,362,c.l,'lb','start');
+c.c.forEach(function(r,j){var y=380+92*j;P('M'+(x-92)+' '+(y+37)+'L'+(x-82)+' '+(y+37),'ed',1);
+B(x-80,y,200,74,c.k,'<text x="'+(x+20)+'" y="'+(y+22)+'" class="t" text-anchor="middle">'+r[0]+'</text><text x="'+(x+20)+'" y="'+(y+41)+'" class="s" text-anchor="middle">'+r[1]+'</text><text x="'+(x+20)+'" y="'+(y+58)+'" class="s" text-anchor="middle">'+r[2]+'</text>')})});
+function H(x1,x2,y,l){P('M'+x1+' '+y+'L'+x2+' '+y,'cx',2);T((x1+x2)/2,y-7,l,'lx')}
+H(338,262,417,'vigila a');H(338,262,601,'autorregula');
+H(818,898,417,'se emiten en');H(818,898,509,'circulan en');
+H(1098,1178,417,'permite');H(1098,1178,509,'impulsa');H(1098,1178,601,'facilita');
+P('M540 509L560 509L560 755L860 755L860 601L898 601','cx',2);T(710,748,'administra','lx');
+P('M160 638L160 770L872 770L872 693L898 693','cx',2);T(400,763,'operan en','lx');
+T(700,830,'¿Cómo funciona?','h');
+B(250,850,250,74,1,'<text x="375" y="874" class="t" text-anchor="middle">Emisor</text><text x="375" y="893" class="s" text-anchor="middle">Necesita recursos para</text><text x="375" y="910" class="s" text-anchor="middle">crecer o financiar proyectos</text>');
+B(575,850,250,74,3,'<text x="700" y="874" class="t" text-anchor="middle">Valores</text><text x="700" y="893" class="s" text-anchor="middle">Acciones, bonos, TES y otros</text><text x="700" y="910" class="s" text-anchor="middle">Mercado primario</text>');
+B(900,850,250,74,2,'<text x="1025" y="874" class="t" text-anchor="middle">Inversionista</text><text x="1025" y="893" class="s" text-anchor="middle">Aporta sus recursos y</text><text x="1025" y="910" class="s" text-anchor="middle">espera una rentabilidad</text>');
+P('M500 887L573 887','ed',1);T(537,880,'emite','lb');
+P('M825 887L898 887','ed',1);T(862,880,'los compra','lb');
+o+='<rect x="250" y="942" width="900" height="44" rx="9" fill="none" stroke="var(--ln)" stroke-width="1.5" stroke-dasharray="6 4"/>';
+T(700,969,'Todo bajo reglas aplicables y, cuando corresponde, con participantes autorizados','s');
+S.innerHTML=o;
+</script>
+</body>
+</html>
